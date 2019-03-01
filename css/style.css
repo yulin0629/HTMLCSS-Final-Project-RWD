@@ -49,7 +49,68 @@ img {
 	box-sizing: border-box;
 }
 
-.header h1 a{
+.clearfix {
+	clear: both;
+}
+
+.container {
+	width: 1002px;
+	margin: 0 auto;
+}
+
+.bar {
+	background-color: #f6f6f6;
+	margin-bottom: 8px;
+
+}
+
+.bar ul {
+	float: right;
+	margin-right: 15px;
+}
+
+.bar ul li {
+	float: left;
+	margin: 5px;
+}
+
+.bar li a {
+	display: block;
+	text-decoration: none;
+	padding: 2px 10px;
+}
+
+.bar li a:hover {
+	background-color: #ddd;
+	border-radius: 2px;
+}
+
+.facebook {
+	border-right: 1px solid #ccc;
+	
+}
+
+.facebook span {
+	color: #4460a0;
+	font-size: 14px;
+}
+
+
+.twitter span {
+	color: #00aaec;
+	font-size: 14px;
+}
+
+.twitter a:hover span {
+	color: #0081b3;
+}
+
+.header h1 {
+	float: left;
+	margin-left: 20px;
+}
+
+.header h1 a, footer h1 a{
 	background-image: url(../img/logo.png);
 	display: block;
 	width: 171px;
@@ -59,3 +120,213 @@ img {
 	white-space: nowrap;
 }
 
+.header ul {
+	float: right;
+}
+
+.header ul li {
+	float: left;
+	margin-right: 10px;
+}
+
+.header ul a {
+	display: block;
+	text-decoration: none;
+	margin-right: 10px;
+	padding: 10px;
+	padding-bottom: 15px;
+	color: #00cc90;
+	border-bottom: 2px solid transparent;
+}
+
+.header ul a:hover{
+	border-bottom: 2px solid #00cc90;
+}
+
+.banner {
+	background-image: url(../img/banner.png);
+	width: 100%;
+	height: 346px;
+	color: white;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.slogan {
+	padding: 40px 20px;
+	font-size: 34px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	transform: translate(0, -50%);
+	color: white;
+	background-color: rgba(.01, .01, .01, 0.15);
+}
+
+.features {
+	margin: 0 20px 20px;
+	display: inline-block;
+}
+
+.features .jquery li {
+	list-style: disc;
+	text-align: left;
+	text-indent: 10px;
+	list-style-position: inside;
+	margin: 6px 0;
+}
+
+.features>ul>li {
+	width: 31.2%;
+	border: 1px solid #f1f1f1;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 1px 3px 5px #eee;
+}
+
+
+
+.features .left {
+	float: left;
+	margin-right: 30px;
+}
+
+.features .right {
+	float: right;
+}
+
+.features img {
+	margin-bottom: 10px;
+}
+
+.features h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.features p {
+	text-align: left;
+	line-height: 22px;
+}
+
+.difference {
+	text-align: center;
+	padding: 60px;
+}
+
+.difference h2 {
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+.difference table {
+	width: 100%;
+}
+
+th {
+	background-color: #f7f7f7;
+	text-align: left;
+	padding: 10px;
+	font-weight: 700;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+td {
+	text-align: left;
+	padding: 10px;
+}
+
+.form {
+	background-image: linear-gradient(#00644b, #009872);
+	padding: 30px;
+	margin-bottom: 5px;
+}
+.form h2 {
+	text-align: center;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.green {
+	color: #22b28e;
+}
+
+.left {
+	float: left;
+}
+
+.left.message {
+	width: 48%;
+	height: 245px;
+	resize: none;
+}
+
+.right {
+	float: right;
+}
+
+.right.contact-info {
+	width: 48%;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.form h2 {
+	font-size: 24px;
+	line-height: 35px;
+}
+
+.form ::placeholder {
+	color: #AAA;
+}
+
+.form input[type=text] {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 8px;
+	border-radius: 3px;
+	border-style: none;
+	font-size: 14px;
+}
+
+.form input[type=submit] {
+	color: white;
+	background-color: #00cc99;
+	border-style: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	float: right;
+	font-size: 16px;
+}
+
+footer {
+	padding: 20px;
+}
+
+footer h1 a {
+	filter: grayscale(100%);
+}
+
+footer li {
+	margin-bottom: 10px;
+}
+
+footer li span {
+	color: #555;
+}
+
+footer li a {
+	display: inline-block;
+	color: #e12d80;
+	text-decoration: none;
+}
