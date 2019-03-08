@@ -317,7 +317,7 @@ footer h1 a {
     text-align: left;
 }
 
-.difference th {
+.difference th[scope=col] {
     background-color: #f7f7f7;
     padding: 15px 20px;
     font-weight: bolder;
@@ -329,7 +329,7 @@ footer h1 a {
     border-top: 1px solid #ddd;
 }
 
-.difference td {
+.difference td, .difference th[scope=row] {
     padding: 15px 20px;
 }
 
