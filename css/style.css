@@ -208,7 +208,7 @@ img {
     color: #0081b3;
 }
 
-.header h1 {
+header h1 {
     float: left;
     margin-left: 20px;
 }
@@ -223,16 +223,16 @@ img {
     white-space: nowrap;
 }
 
-.header>#nav {
+header>nav {
     float: right;
 }
 
-#nav li {
+nav li {
     float: left;
     margin-right: 10px;
 }
 
-#nav a {
+nav a {
     display: block;
     text-decoration: none;
     margin-right: 10px;
@@ -240,7 +240,7 @@ img {
     color: #00cc90;
 }
 
-#nav li a:after {
+nav li a:after {
     display: block;
     content: '';
     padding-bottom: 15px;
@@ -249,7 +249,7 @@ img {
     transition: 0.1s ease-in-out;
 }
 
-#nav li a:hover:after {
+nav li a:hover:after {
     transform: scaleX(1);
 }
 
