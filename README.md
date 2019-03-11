@@ -23,4 +23,4 @@
 13. CSS 圓狐, 陰影, 漸層
 14. 切圖類型(JPG, GIF, PNG)
 
-[![Preview](preview.png)](https://yulin0629.github.io/HTMLCSS-Final-Homework/)
+[![Preview](preview.jpg)](https://yulin0629.github.io/HTMLCSS-Final-Homework/)
