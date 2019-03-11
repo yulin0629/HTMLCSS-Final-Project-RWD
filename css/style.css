@@ -137,8 +137,16 @@ img {
     box-sizing: border-box;
 }
 
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+
 .clearfix {
-    overflow: auto;
+    *zoom: 1;
 }
 
 .text-center {
@@ -215,16 +223,16 @@ img {
     white-space: nowrap;
 }
 
-.header>.nav {
+.header>#nav {
     float: right;
 }
 
-.nav li {
+#nav li {
     float: left;
     margin-right: 10px;
 }
 
-.nav a {
+#nav a {
     display: block;
     text-decoration: none;
     margin-right: 10px;
@@ -232,7 +240,7 @@ img {
     color: #00cc90;
 }
 
-.nav li a:after {
+#nav li a:after {
     display: block;
     content: '';
     padding-bottom: 15px;
@@ -241,7 +249,7 @@ img {
     transition: 0.1s ease-in-out;
 }
 
-.nav li a:hover:after {
+#nav li a:hover:after {
     transform: scaleX(1);
 }
 
