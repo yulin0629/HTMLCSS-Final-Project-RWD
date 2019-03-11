@@ -21,7 +21,7 @@
 <body>
     <div class="wrap">
         <div class="bar clearfix">
-            <ul class="social-nav">
+            <ul class="social-nav clearfix">
                 <li class="facebook">
                     <a href="#">
                         <img src="img/icon-facebook.png" alt="facebookicon">
@@ -67,7 +67,7 @@
                     <p class="feature-description">響應式網站設計 (Responsive web
                         design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
                 </li>
-                <li class="pull-right jquery">
+                <li class="pull-left jquery">
                     <img src="img/jQuery.png" alt="jQuery">
                     <h3>jQuery 實戰教學</h3>
                     <p class="feature-description">本課程有以下特色</p>
@@ -134,7 +134,6 @@
         <div class="action clearfix">
             <h2 class="text-center">對我們的課程有興趣嗎？<br>歡迎留下您的資料</h2>
             <form action="index.html">
-                <textarea class="pull-left message" name="message" id="message"></textarea>
                 <div class="pull-right contact-info">
                     <label for="name">姓名</label>
                     <input type="text" id="name" name="name" placeholder="六角講師" required>
@@ -142,8 +141,9 @@
                     <input type="tel" id="tel" name="tel" placeholder="0912345678">
                     <label for="mail">信箱</label>
                     <input type="email" id="mail" name="mail" placeholder="hexschool@mail.com">
-                    <input type="submit" value="送出">
                 </div>
+                <textarea class="pull-left message" name="message" id="message" placeholder="訊息"></textarea>
+                <div><input type="submit" value="送出"></div>
             </form>
         </div>
         <footer class="clearfix">

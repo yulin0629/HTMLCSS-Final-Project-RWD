@@ -154,7 +154,7 @@ img {
 }
 
 .wrap {
-    width: 1002px;
+    max-width: 1002px;
     margin: 0 auto;
 }
 
@@ -208,7 +208,7 @@ img {
     color: #0081b3;
 }
 
-header h1 {
+header .logo {
     float: left;
     margin-left: 20px;
 }
@@ -256,6 +256,8 @@ nav li:hover:after {
     height: 346px;
     position: relative;
     margin-bottom: 60px;
+    background-size: cover;
+    background-position: right;
 }
 
 .slogan {
@@ -279,15 +281,15 @@ nav li:hover:after {
 }
 
 .feature>ul>li {
-    width: 31.2%;
+    width: 31.3%;
     border: 1px solid #f1f1f1;
     padding: 20px;
     box-shadow: 1px 3px 5px #eee;
-    min-height: 350px;
 }
 
 .feature .pull-left {
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    margin: 1%;
 }
 
 .feature img {
@@ -366,7 +368,7 @@ nav li:hover:after {
     float: left;
 }
 
-.pull-left.message {
+.message {
     width: 48%;
     min-height: 260px;
     resize: none;
@@ -410,7 +412,7 @@ nav li:hover:after {
     transition: 0.1s box-shadow easeinout;
 }
 
-.contact-info input[type=submit] {
+input[type=submit] {
     color: white;
     background-color: #00cc99;
     border-style: none;
@@ -462,4 +464,70 @@ footer .logo a {
 
 #contact-us a:hover {
 	color: #ff5122;
+}
+
+@media (max-width: 900px) {
+    .feature>ul>li {
+        width: 98%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        margin-bottom: 20px;
+    }
+    header .logo {
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+    .logo a {
+        display: inline-block;
+    }
+
+    header>nav {
+        float: none;
+        margin-left: 20px;
+    }
+
+    nav li {
+        float: none;
+        /* text-align: center; */
+    }
+
+    nav li:after {
+        border-bottom: none;
+    }
+
+    .contact-info {
+        float: none;
+        width: 100%;
+    }
+
+    .message {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    footer .logo {
+        float: none;
+        margin-bottom: 10px;
+    }
+    #contact-us {
+        float: none;
+    }
+    .difference {
+        padding: 20px;
+    }
 }
