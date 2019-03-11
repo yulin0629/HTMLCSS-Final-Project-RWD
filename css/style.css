@@ -137,10 +137,8 @@ img {
     box-sizing: border-box;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both
+.clearfix {
+    overflow: auto;
 }
 
 .text-center {
@@ -204,8 +202,8 @@ img {
     margin-left: 20px;
 }
 
-.header h1 a,
-footer h1 a {
+.header .logo a,
+footer .logo a {
     background-image: url(../img/logo.png);
     display: block;
     width: 171px;
@@ -240,7 +238,6 @@ footer h1 a {
 
 .banner {
     background-image: url(../img/banner.png);
-    width: 100%;
     height: 346px;
     color: white;
     position: relative;
@@ -256,7 +253,11 @@ footer h1 a {
     left: 0;
     transform: translate(0, -50%);
     color: white;
-    background-color: rgba(.01, .01, .01, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.slogan h2 {
+    line-height: 50px;
 }
 
 .feature {
@@ -289,18 +290,17 @@ footer h1 a {
 
 .feature p {
     line-height: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .feature .feature-description {
-	text-align: left;
+    text-align: left;
+    color: #333333;
 }
 
 .jquery li {
-    list-style: disc;
-    text-indent: 10px;
-    list-style-position: inside;
     margin: 6px 0;
+    letter-spacing: 1px;
 }
 
 .difference {
@@ -425,7 +425,7 @@ footer {
     padding: 20px;
 }
 
-footer h1 a {
+footer div a {
     filter: grayscale(100%);
 }
 
