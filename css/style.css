@@ -163,7 +163,7 @@ img {
 
 .bar ul li {
     float: left;
-    margin: 5px;
+    margin: 5px 0px;
 }
 
 .bar li a {
@@ -220,12 +220,12 @@ footer .logo a {
     float: right;
 }
 
-.header ul li {
+.nav li {
     float: left;
     margin-right: 10px;
 }
 
-.header ul a {
+.nav a {
     display: block;
     text-decoration: none;
     margin-right: 10px;
@@ -233,7 +233,7 @@ footer .logo a {
     color: #00cc90;
 }
 
-.header li a:after {
+.nav li a:after {
     display: block;
     content: '';
     padding-bottom: 15px;
@@ -242,7 +242,7 @@ footer .logo a {
     transition: 0.1s ease-in-out;
 }
 
-.header li a:hover:after {
+.nav li a:hover:after {
     transform: scaleX(1);
 }
 
