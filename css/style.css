@@ -156,24 +156,24 @@ img {
 
 }
 
-.bar ul {
+.bar .social-nav {
     float: right;
     margin-right: 15px;
 }
 
-.bar ul li {
+.social-nav li {
     float: left;
     margin: 5px 0px;
 }
 
-.bar li a {
+.social-nav a {
     display: block;
     text-decoration: none;
     padding: 2px 10px;
     transition: 0.1s background-color ease-in-out;
 }
 
-.bar li a:hover {
+.social-nav a:hover {
     background-color: #ddd;
     border-radius: 2px;
 }
@@ -205,8 +205,7 @@ img {
     margin-left: 20px;
 }
 
-.header .logo a,
-footer .logo a {
+.logo a {
     background-image: url(../img/logo.png);
     display: block;
     width: 171px;
@@ -216,7 +215,7 @@ footer .logo a {
     white-space: nowrap;
 }
 
-.header ul {
+.header>.nav {
     float: right;
 }
 
@@ -280,8 +279,6 @@ footer .logo a {
     box-shadow: 1px 3px 5px #eee;
     min-height: 350px;
 }
-
-
 
 .feature .pull-left {
     margin-right: 30px;
@@ -387,7 +384,7 @@ footer .logo a {
     color: #AAA;
 }
 
-.action input[type=text] {
+.action input[type=text], .action input[type=email], .action input[type=tel] {
     display: block;
     margin-bottom: 20px;
     width: 100%;
@@ -396,11 +393,15 @@ footer .logo a {
     border-style: none;
     font-size: 14px;
     border: 1px solid #e1e1e1;
+    transition: 0.1s box-shadow easeinout;
 }
 
 .action textarea {
     border: 1px solid #e1e1e1;
     font-size: 16px;
+    border-radius: 3px;
+    border-style: none;
+    transition: 0.1s box-shadow easeinout;
 }
 
 .contact-info input[type=submit] {
@@ -412,9 +413,12 @@ footer .logo a {
     float: right;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.1s background-color ease-in-out;
 }
 
 .action input[type=text]:focus,
+.action input[type=tel]:focus,
+.action input[type=email]:focus,
 .action textarea:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 204, 153, 1);
@@ -434,22 +438,22 @@ footer {
     padding: 20px;
 }
 
-footer div a {
+footer .logo a {
     filter: grayscale(100%);
 }
 
-footer li span {
+#contact-us span {
     color: #555;
     letter-spacing: 1px;
 }
 
-footer li a {
+#contact-us a {
     display: inline-block;
     color: #e12d80;
     text-decoration: none;
     padding: 5px 0;
 }
 
-footer li a:hover {
+#contact-us a:hover {
 	color: #ff5122;
 }
