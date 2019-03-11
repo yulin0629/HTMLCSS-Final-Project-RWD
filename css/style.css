@@ -229,27 +229,25 @@ header>nav {
 
 nav li {
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav a {
     display: block;
     text-decoration: none;
-    margin-right: 10px;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 15px 10px;
     color: #00cc90;
 }
 
-nav li a:after {
+nav li:after {
     display: block;
     content: '';
-    padding-bottom: 15px;
     border-bottom: 2px solid #00cc90;
     transform: scaleX(0);
     transition: 0.1s ease-in-out;
 }
 
-nav li a:hover:after {
+nav li:hover:after {
     transform: scaleX(1);
 }
 
