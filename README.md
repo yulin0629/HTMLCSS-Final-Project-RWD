@@ -1,11 +1,10 @@
-# HTMLCSS-Final-Homework
-從一個PSD檔開始，自行切圖，然後用HTML、CSS來完成整個版。
+## 概述
+這是六角學院的`使用HTML、CSS 開發一個網站`課程的最後作業
+課程給了我一個psd檔，使用用photoshop打開，裁切出自己要的圖，測量各個元素的邊距和大小，規畫整個網頁的layout。
 
-六角學院的`使用HTML、CSS 開發一個網站`課程的最後作業
-從拿到一個psd檔後，先用photoshop打開
-然後開始出要的圖
-測量各個元素的邊距和大小
-規畫整個網頁的layout
+整個原始碼只使用了HTML和CSS的語法，CSS在做layout的時候沒有用flex、grid等較先進的屬性，而只使用float、position這一些屬性來排版，因為我的主要目的是熟悉基本HTML、CSS的使用。
+
+
 
 過程中注意使用
 1. HTML TAG 是否使用的有意義
