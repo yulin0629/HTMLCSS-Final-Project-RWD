@@ -252,7 +252,7 @@ nav li:hover:after {
 }
 
 .banner {
-    background-image: url(../img/banner.png);
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/yulin0629/banner.png);
     height: 346px;
     position: relative;
     margin-bottom: 60px;
